@@ -16,14 +16,12 @@ public class MainClass {
 		
 		String inputFile;
 		String delimiter;
-		int columnCount;
-		int u,v,timestep;
 		
 		System.out.println("The entered format :");
 		for(int i = 0;i<args.length ; i++)
 			System.out.print(args[i]+" ");
 		inputFile = args[0];
-		columnCount = Integer.parseInt(args[1]);
+		Integer.parseInt(args[1]);
 		if(args[2].equalsIgnoreCase("space"))
 			delimiter = "\\s";
 		else
@@ -31,9 +29,9 @@ public class MainClass {
 		
 		Scanner param = new Scanner (args[3]);
 		param.useDelimiter(",");
-		u = param.nextInt();
-		v = param.nextInt();
-		timestep = param.nextInt();
+		param.nextInt();
+		param.nextInt();
+		param.nextInt();
 		param.close();
 			
 			
